@@ -15,11 +15,6 @@ pipeline {
 			steps {
 				sh "mvn package"
 			}
-			steps {
-				sh "make"
-				archiveArtefacts artefacts: "**/target/*.jar",fingerprint: true
-			}
-
 		}
 	}
 }
