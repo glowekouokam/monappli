@@ -33,9 +33,10 @@
     </dependency>
   </dependencies>
   <scm>
-   <connection>scm:git:https://github.com/glowekouokam/monappli.git</connection>
+   <connection>scm:git:https://glowekouokam:Javaj2ee@github.com/glowekouokam/monappli.git</connection>
    <url>https://github.com/glowekouokam/monappli</url>
    <developerConnection>scm:git:https://github.com/glowekouokam/monappli.git</developerConnection>
+   <tag>HEAD</tag>
 </scm>
 
 </project>
