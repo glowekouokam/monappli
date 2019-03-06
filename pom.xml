@@ -32,6 +32,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>gervais repo</name>
+      <url>file:///home/gervais/workspace</url>
+    </repository>
+</distributionManagement>
   <scm>
    <connection>scm:git:https://glowekouokam:Javaj2ee@github.com/glowekouokam/monappli.git</connection>
    <url>https://github.com/glowekouokam/monappli</url>
