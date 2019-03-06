@@ -37,6 +37,7 @@
       <id>internal.repo</id>
       <name>gervais repo</name>
       <url>file:///home/gervais/workspace</url>
+      <tag>HEAD</tag>
     </repository>
 </distributionManagement>
   <scm>
