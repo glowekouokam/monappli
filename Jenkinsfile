@@ -14,7 +14,6 @@ pipeline {
 		stage ('----package---') {
 			steps {
 				sh "mvn package"
-                                archiveArtefacts artefacts: "**/target/*.jar",fingerprint: true
 			}
 		}
 	}
