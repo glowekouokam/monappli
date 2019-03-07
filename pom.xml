@@ -3,7 +3,7 @@
   <groupId>com.objis.mavenapps</groupId>
   <artifactId>monappli</artifactId>
   <packaging>jar</packaging>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <name>monappli</name>
   <url>http://maven.apache.org</url>
   <!-- Plugin de génération du site du projet -->
