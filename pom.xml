@@ -44,7 +44,7 @@
     <repository>
       <id>internal.repo</id>
       <name>gervais repo</name>
-      <url>file:///home/gervais/workspace</url>
+      <url>http://localhost:8080/nexus/content/repositories/releases/</url>
     </repository>
 </distributionManagement>
   <scm>
