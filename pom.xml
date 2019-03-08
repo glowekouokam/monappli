@@ -43,8 +43,8 @@
   <distributionManagement>
     <repository>
       <id>release-repository</id>
-      <name>gervais repo</name>
-      <url>http://localhost:8080/nexus/content/repositories/releases/</url>
+      <name>release-repository</name>
+      <url>http://localhost:8080/nexus/content/repositories/release-repository/</url>
     </repository>
 </distributionManagement>
   <scm>
