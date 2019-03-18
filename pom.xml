@@ -4,6 +4,7 @@
   <artifactId>monappli</artifactId>
   <packaging>jar</packaging>
   <version>1.25-SNAPSHOT</version>
+   <!-- <version>1.25-SNAPSHOT</version> -->
   <name>monappli</name>
   <url>http://maven.apache.org</url>
   <!-- Plugin de génération du site du projet -->
@@ -46,6 +47,11 @@
       <name>release-repository</name>
       <url>http://localhost:8080/nexus/content/repositories/releases</url>
     </repository>
+    <snapshotRepository>
+      <id>snapshot-repository</id>
+      <name>snapshot-repository</name>
+      <url>http://localhost:8080/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
 </distributionManagement>
   <scm>
    <connection>scm:git:https://github.com/glowekouokam/monappli.git</connection>
