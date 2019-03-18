@@ -3,7 +3,7 @@
   <groupId>com.objis.mavenapps</groupId>
   <artifactId>monappli</artifactId>
   <packaging>jar</packaging>
-  <version>1.26</version>
+  <version>1.27-SNAPSHOT</version>
    <!-- <version>1.25-SNAPSHOT</version> -->
   <name>monappli</name>
   <url>http://maven.apache.org</url>
@@ -57,7 +57,7 @@
    <connection>scm:git:https://github.com/glowekouokam/monappli.git</connection>
    <url>https://github.com/glowekouokam/monappli</url>
    <developerConnection>scm:git:https://github.com/glowekouokam/monappli.git</developerConnection>
-  <tag>1.26-SNAPSHOT</tag>
+  <tag>HEAD</tag>
   </scm>
 
 </project>
