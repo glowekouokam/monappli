@@ -16,7 +16,7 @@ pipeline {
         stage("Build & Deploy SNAPSHOT") {
             steps {
                 ansiColor("xterm") {
-                    sh "mvn -B deploy"
+                    sh "mvn -B clean deploy"
                 }
             }
         }
