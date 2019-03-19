@@ -5,10 +5,6 @@ pipeline {
 
     agent any
 
-    tools {
-        maven "Maven"
-    }
-
     parameters {
         booleanParam(name: "RELEASE",
                 description: "Build a release from current commit.",
