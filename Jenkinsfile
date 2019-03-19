@@ -16,7 +16,7 @@ pipeline {
 				sh "mvn package"
 			}
 		}
-		stage('-----deploy'----) {
+		stage('-----deploy----') {
             when {
               expression {
                 currentBuild.result == null || currentBuild.result == 'SUCCESS' 
