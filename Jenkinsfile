@@ -23,7 +23,7 @@ pipeline {
               }
             }
             steps {
-				withMaven(mavenSettingsConfig: 'mvn-setting-xml') {
+				withMaven(globalMavenSettingsFilePath : '/home/gervais/.m2/settings.xml') {
 					sh "mvn deploy"
 				}
             }
