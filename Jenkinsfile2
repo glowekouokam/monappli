@@ -12,8 +12,24 @@ pipeline {
     }
 
     stages {
+		
+		stage ( '----clean---') {
+			steps {
+				sh "mvn clean"
+			}
+		}
+		stage('---test--') {
+			steps {
+				sh "mvn test"
+			}
+		}
+		stage ('----package---') {
+			steps {
+				sh "mvn package"
+			}
+		}
 
-        stage("Build & Deploy SNAPSHOT") {
+        stage("Deploy SNAPSHOT") {
             steps {
                 ansiColor("xterm") {
                     sh "mvn -B deploy"
