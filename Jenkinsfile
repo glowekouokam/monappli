@@ -23,7 +23,7 @@ pipeline {
               }
             }
             steps {
-				withMaven(maven: 'apache-maven-3.0.5', mavenSettingsConfig: 'mvn-setting-xml') {
+				withMaven(maven: '/usr/local/apache-maven-3.0.5', mavenSettingsConfig: 'mvn-setting-xml') {
 					sh "mvn deploy"
 				}
             }
