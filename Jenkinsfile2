@@ -5,12 +5,6 @@ pipeline {
 
     agent any
 
-    parameters {
-        booleanParam(name: "RELEASE",
-                description: "Build a release from current commit.",
-                defaultValue: false)
-    }
-
     stages {
 		
 		stage ( '----clean---') {
@@ -29,29 +23,5 @@ pipeline {
 			}
 		}
 
-        stage("Deploy SNAPSHOT") {
-            steps {
-                sh "mvn -B clean deploy"
-            }
-        }
-
-        stage("Release") {
-            when {
-                expression { params.RELEASE }
-            }
-            steps {
-                ansiColor("xterm") {
-                    sh "mvn -B release:prepare"
-                    sh "mvn -B release:perform"
-                }
-            }
-        }
-
-    }
-
-    post {
-        always {
-            deleteDir()
-        }
     }
 }
