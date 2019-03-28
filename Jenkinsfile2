@@ -17,9 +17,9 @@ pipeline {
 				sh "mvn test"
 			}
 		}
-		stage ('----package---') {
+		stage ('----release---') {
 			steps {
-				sh "mvn package"
+				sh "mvn -B release:prepare"
 			}
 		}
 
