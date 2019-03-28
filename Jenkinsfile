@@ -23,7 +23,7 @@ pipeline {
               }
             }
             steps {
-				withMaven(maven: 'M3', mavenSettingsConfig: 'mvn-setting-xml') {
+				withMaven(mavenSettingsConfig: 'mvn-setting-xml') {
 					sh "mvn deploy"
 				}
             }
