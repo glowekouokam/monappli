@@ -20,7 +20,8 @@ pipeline {
 		stage ('----release---') {
 			steps {
                                 sh "git checkout master"
-				sh "mvn -B release:clean release:prepare"
+				sh "release:rollback"
+				//sh "mvn -B release:clean release:prepare"
 			}
 		}
 
