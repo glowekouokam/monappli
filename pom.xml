@@ -52,9 +52,9 @@
     </snapshotRepository>
 </distributionManagement>
   <scm>
-   <connection>scm:git:https://github.com/glowekouokam/monappli.git</connection>
+   <connection>scm:git:https://glowekouokam:Support5434@github.com/glowekouokam/monappli.git</connection>
    <url>https://github.com/glowekouokam/monappli</url>
-   <developerConnection>scm:git:https://github.com/glowekouokam/monappli.git</developerConnection>
+   <developerConnection>scm:git:https://glowekouokam:Support5434@github.com/glowekouokam/monappli.git</developerConnection>
   </scm>
 
 </project>
