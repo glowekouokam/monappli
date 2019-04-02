@@ -13,7 +13,7 @@
    <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-site-plugin</artifactId>
-	   <version>2.0.1</verion>	   
+	   <version>2.0.1</version>	   
     <configuration>
      <reportPlugins> <!-- Ici 1 seul rapport , celui des informations standards du POM-->
       <plugin>
