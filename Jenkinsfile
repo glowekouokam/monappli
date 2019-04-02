@@ -16,6 +16,11 @@ pipeline {
 				sh "mvn package"
 			}
 		}
+                stage ('----script---') {
+			steps {
+				sh label: '', script: 'echo LOOOOOOOOOOOOOOOWWWWWWWWWWWWWWWWWWWWWWWWWEEEEEEEEEEEEEEEE'
+			}
+		}
 		stage('-----deploy----') {
             when {
               expression {
