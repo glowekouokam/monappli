@@ -11,7 +11,7 @@ pipeline {
 				sh "git checkout master"
                                 sh "git reset --hard origin/master"
 				//sh "mvn -B release:rollback"
-                                withCredentials([usernamePassword(credentialsId: 'test', passwordVariable: 'Support5434', usernameVariable: 'glowekouokam')]) {
+                                withCredentials([usernamePassword(credentialsId: 'gitbub', passwordVariable: 'Support5434', usernameVariable: 'glowekouokam')]) {
                                         				sh "mvn -B release:clean release:prepare"
                                 }
 			}
