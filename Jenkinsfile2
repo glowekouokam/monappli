@@ -22,7 +22,9 @@ pipeline {
 				sh "git checkout master"
                                 sh "git reset --hard origin/master"
 				//sh "mvn -B release:rollback"
-				sh "mvn -B release:clean release:prepare"
+                                withCredentials([usernamePassword(credentialsId: '', passwordVariable: 'Support5434', usernameVariable: 'glowekouokam')]) {
+                                        				sh "mvn -B release:clean release:prepare"
+                                }
 			}
 		}
 
